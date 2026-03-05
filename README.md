@@ -45,42 +45,6 @@ LearnFetch is a unified search platform that aggregates free educational resourc
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+
-- npm or pnpm
-
-### Installation
-```bash
-# Clone the repo
-git clone https://github.com/arjungupta2508/LearnFetch.git
-cd LearnFetch
-
-# Install dependencies
-npm install
-
-# Set up environment variables
-cp .env.example .env
-# Fill in your API keys in .env
-
-# Start development server
-npm run dev
-```
-
-### Environment Variables
-
-Create a `.env` file in the root directory:
-```env
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-VITE_YOUTUBE_API_KEY=your_youtube_api_key
-VITE_GOOGLE_SEARCH_KEY=your_google_search_key
-VITE_SEARCH_ENGINE_ID=your_search_engine_id
-```
-
----
-
 ## 📁 Project Structure
 ```
 src/
