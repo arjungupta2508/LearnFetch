@@ -53,3 +53,78 @@ LearnFetch is a unified search platform that aggregates free educational resourc
 
 ### Installation
 ```bash
+# Clone the repo
+git clone https://github.com/arjungupta2508/LearnFetch.git
+cd LearnFetch
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Fill in your API keys in .env
+
+# Start development server
+npm run dev
+```
+
+### Environment Variables
+
+Create a `.env` file in the root directory:
+```env
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_YOUTUBE_API_KEY=your_youtube_api_key
+VITE_GOOGLE_SEARCH_KEY=your_google_search_key
+VITE_SEARCH_ENGINE_ID=your_search_engine_id
+```
+
+---
+
+## 📁 Project Structure
+```
+src/
+├── app/
+│   ├── components/        # Reusable UI components
+│   │   ├── auth/          # Authentication components
+│   │   ├── ui/            # shadcn/ui components
+│   │   ├── Header.tsx
+│   │   ├── SearchBar.tsx
+│   │   ├── ResourceCard.tsx
+│   │   └── FilterPanel.tsx
+│   ├── pages/             # Page components
+│   │   ├── SearchPage.tsx
+│   │   ├── SavedResourcesPage.tsx
+│   │   └── ResourceDetailPage.tsx
+│   ├── services/          # API integrations
+│   │   ├── youtubeApi.ts
+│   │   ├── openLibraryApi.ts
+│   │   ├── arxivApi.ts
+│   │   └── wikipediaApi.ts
+│   ├── types/             # TypeScript types
+│   ├── hooks/             # Custom React hooks
+│   └── utils/             # Utility functions
+├── lib/                   # Supabase client
+└── styles/                # Global styles
+```
+
+---
+
+## 🔌 APIs Used
+
+| API | Purpose | Free Tier |
+|---|---|---|
+| YouTube Data API v3 | Video tutorials | 10,000 req/day |
+| Open Library API | Free books & PDFs | Unlimited |
+| ArXiv API | Academic papers | Unlimited |
+| Wikipedia API | Reference articles | Unlimited |
+
+---
+
+## 📄 License
+
+MIT License — feel free to use this project for learning purposes.
+
+---
+
+<p align="center">Made with ❤️ by <a href="https://github.com/arjungupta2508">Arjun Gupta</a></p>
